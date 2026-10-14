@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b47">
+  <meta name="description" content="Mukulbihar Bank voice banking. Check your balance, review recent transactions, and request a card block in English or Hindi.">
+  <title>Mukulbihar Bank | Voice Banking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="topline"><div class="container">VOICE BANKING <span aria-hidden="true">|</span> AVAILABLE IN ENGLISH &amp; HINDI</div></div>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Mukulbihar Bank home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M13 45V19h8l11 14.5L43 19h8v26h-8V30.3L32 44 21 30.3V45h-8Z" fill="currentColor"/><path d="M13 50h38" stroke="#c4ad86" stroke-width="2"/></svg></span>
+        <span class="brand-name">MUKULBIHAR <span>BANK</span></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#security">Security</a>
+      </nav>
+      <div class="header-actions">
+        <label class="language-picker" for="language"><span>Language</span>
+          <select id="language" aria-label="Conversation language">
+            <option value="en-US">English (US)</option>
+            <option value="hi-IN">हिन्दी</option>
+          </select>
+        </label>
+        <button id="headerActionBtn" class="header-cta" type="button">Open voice banking <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="/assets/voice-banking-home.png" alt="Customer speaking to a laptop at home" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow light"><span class="eyebrow-line"></span> MUKULBIHAR VOICE BANKING</p>
+          <h1 id="hero-title">Manage your account<br>by voice.</h1>
+          <p class="hero-description">Check your balance, review recent transactions or request a card block. Speak or type in English or Hindi.</p>
+          <div class="hero-actions">
+            <button class="button button-light" type="button" data-start-agent>Start voice banking <span aria-hidden="true">↗</span></button>
+            <a class="text-link light-link" href="#how-it-works">How it works <span aria-hidden="true">→</span></a>
+          </div>
+          <p class="hero-note"><span class="note-dot" aria-hidden="true"></span> In your browser. Account details require verification.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-space" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-heading services-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> WHAT YOU CAN DO</p>
+            <h2 id="services-title">Banking services</h2>
+          </div>
+          <p>After a short identity check, the assistant can help with these account services.</p>
+        </div>
+        <div class="service-list">
+          <article class="service-row reveal">
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="4" y="11" width="32" height="22" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M4 18h32M10 26h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <span class="service-number">01</span>
+            <h3>Balance enquiry</h3>
+            <p>Get the available balance for your verified account.</p>
+            <button class="service-action" type="button" data-start-agent aria-label="Open assistant for balance enquiry">↗</button>
+          </article>
+          <article class="service-row reveal delay-1">
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><path d="M8 6h24v28H8zM13 14h14M13 20h14M13 26h9" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg></div>
+            <span class="service-number">02</span>
+            <h3>Recent transactions</h3>
+            <p>Ask for your latest one to five transactions.</p>
+            <button class="service-action" type="button" data-start-agent aria-label="Open assistant for recent transactions">↗</button>
+          </article>
+          <article class="service-row reveal delay-2">
+            <div class="service-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none"><rect x="5" y="10" width="30" height="21" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M5 17h30M20 23v4m-2-2h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <span class="service-number">03</span>
+            <h3>Block a card</h3>
+            <p>Request a block for your linked card; we’ll ask you to confirm it.</p>
+            <button class="service-action" type="button" data-start-agent aria-label="Open assistant to block a card">↗</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="assistant-section section-space" id="live-agent" aria-labelledby="agent-title">
+      <div class="container assistant-layout">
+        <div class="assistant-copy reveal">
+          <p class="eyebrow"><span class="eyebrow-line"></span> VOICE BANKING</p>
+          <h2 id="agent-title">How can we help you?</h2>
+          <p>Ask a question at any time. For your balance, transactions or card, we’ll guide you through verification first.</p>
+          <div class="session-note">
+            <span>BEFORE YOU BEGIN</span>
+            <p>Have your account number and six-digit authenticator code ready for personal banking.</p>
+          </div>
+        </div>
+        <div class="agent-panel reveal delay-1" aria-label="Mukulbihar Bank assistant">
+          <div class="agent-head">
+            <div class="agent-avatar" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M13 45V19h8l11 14.5L43 19h8v26h-8V30.3L32 44 21 30.3V45h-8Z" fill="currentColor"/><path d="M13 50h38" stroke="#c4ad86" stroke-width="2"/></svg></div>
+            <div class="agent-title-group"><strong>Mukulbihar assistant</strong><small id="assistant-status"><span class="online-dot"></span> Ready when you are</small></div>
+            <button id="new-chat" class="agent-secondary" type="button" hidden>New conversation</button>
+          </div>
+          <div id="messages" class="agent-messages" role="log" aria-live="polite" aria-label="Conversation">
+            <div id="empty-state" class="agent-empty">
+              <div class="empty-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="12" y="4" width="8" height="17" rx="4" stroke="currentColor" stroke-width="1.6"/><path d="M8 16a8 8 0 0 0 16 0M16 24v4m-5 0h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+              <strong>How can we help you today?</strong>
+              <p>Start a conversation in English or Hindi.</p>
+              <button id="start" class="agent-primary" type="button">Start conversation <span aria-hidden="true">→</span></button>
+            </div>
+          </div>
+          <div id="quick-actions" class="agent-actions" role="group" aria-label="Account requests" hidden>
+            <button data-command="What is my balance?" data-command-hi="मेरा बैलेंस कितना है?" type="button">Balance</button>
+            <button data-command="Show my last five transactions" data-command-hi="मेरे पिछले पाँच लेनदेन बताओ" type="button">Recent transactions</button>
+            <button data-command="Block my card" data-command-hi="मेरा कार्ड ब्लॉक करें" type="button">Block card</button>
+          </div>
+          <div class="agent-composer">
+            <div class="agent-input-row">
+              <button id="mic" class="mic-button" type="button" aria-label="Speak" title="Speak" disabled><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="9" y="3" width="6" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M6 11a6 6 0 0 0 12 0M12 17v4m-4 0h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+              <form id="message-form" autocomplete="off">
+                <label class="sr-only" for="message-input">Message</label>
+                <input id="message-input" type="text" placeholder="Start a conversation first" disabled maxlength="500" autocomplete="off">
+                <button id="reveal-otp" class="reveal-otp" type="button" aria-label="Show verification code" hidden>Show</button>
+                <button id="send" type="submit" aria-label="Send message" disabled>↑</button>
+              </form>
+            </div>
+            <p id="composer-hint" class="composer-hint">Use your microphone or type a message</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section-space" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> HOW IT WORKS</p><h2 id="how-title">How voice banking works</h2></div>
+        </div>
+        <div class="step-grid">
+          <div class="step reveal"><span>01</span><h3>Tell us what you need</h3><p>Use the microphone or type a message. General questions need no account access.</p></div>
+          <div class="step reveal delay-1"><span>02</span><h3>Verify when needed</h3><p>Enter your account number and the code from your authenticator app.</p></div>
+          <div class="step reveal delay-2"><span>03</span><h3>Review and confirm</h3><p>Hear your account details. A card block goes ahead only when you confirm.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="security-section section-space" id="security" aria-labelledby="security-title">
+      <div class="container security-layout">
+        <div class="security-photo-wrap reveal"><img src="/assets/card-security-home.png" alt="Customer holding a card and phone at home" loading="lazy"></div>
+        <div class="security-copy reveal delay-1">
+          <p class="eyebrow"><span class="eyebrow-line"></span> ACCOUNT ACCESS</p>
+          <h2 id="security-title">Verification before<br>account access</h2>
+          <p>We check your account number and six-digit authenticator code before sharing personal banking information. Blocking a card takes a separate confirmation.</p>
+          <ul>
+            <li>We never ask for your card PIN.</li>
+            <li>You can speak or type the authenticator code.</li>
+            <li>Review recognized digits before you send them.</li>
+          </ul>
+          <button class="text-link dark-link" type="button" data-start-agent>Talk to the assistant <span aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 64 64" focusable="false"><path d="M13 45V19h8l11 14.5L43 19h8v26h-8V30.3L32 44 21 30.3V45h-8Z" fill="currentColor"/><path d="M13 50h38" stroke="#9d825d" stroke-width="2"/></svg></span><span class="brand-name">MUKULBIHAR <span>BANK</span></span></a><p>Voice banking for everyday account requests.</p></div>
+      <nav aria-label="Footer navigation"><a href="#services">Services</a><a href="#how-it-works">How it works</a><a href="#security">Security</a><a href="#live-agent">Voice banking</a></nav>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Mukulbihar Bank</span><span>English &amp; Hindi voice banking in your browser</span></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

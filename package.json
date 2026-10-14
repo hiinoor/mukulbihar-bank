@@ -1,0 +1,18 @@
+{
+  "name": "mukulbihar-bank-voice",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "OLLAMA_MODEL=qwen3:4b-instruct node src/server.js",
+    "start:basic": "node src/server.js",
+    "start:ai": "npm start",
+    "model:serve": "OLLAMA_KEEP_ALIVE=-1 OLLAMA_MODELS=./models ollama serve",
+    "model:pull": "OLLAMA_MODELS=./models ollama pull qwen3:4b-instruct",
+    "voice:setup": "sh scripts/setup-voice.sh",
+    "voice:serve": "node scripts/serve-voice.js",
+    "otp": "node scripts/show-otp.js",
+    "test": "node --test test/*.test.js"
+  }
+}
